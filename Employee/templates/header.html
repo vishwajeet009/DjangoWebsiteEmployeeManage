@@ -1,0 +1,50 @@
+{% load static %}
+<body>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+<nav class="navbar navbar-expand-md bg-dark navbar-Dark">
+  <!-- Brand -->
+  <a class="navbar-brand" style="font-family:helvetica;font-size:27px;" href="http://127.0.0.1:8000/">Employee Management System</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <div style="white-space:pre">&#9&#9&#9&#9&#9&#9&#9&#9&#9&#9&#9</div>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'registration' %}" target="_blank">Employee Signup</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'emp_login' %}" target="_blank"> <i class="fas fa-sign-in-alt"></i> Employee Login</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="./admin" target="_blank"><i class="fas fa-sign-in-alt"></i> Admin Login</a>
+       </li>
+    </ul>
+    <br><br/>
+  </div>
+</nav>
+
+ <footer class="site-footer footerv">
+      <div class="container">
+
+        <div class="row">
+            <h5>About</h5>
+            <p>"<i>Employee management System</i> is a group-project made under supervision of Mr.Subhashish and Mr.Srishilan. This website is a result of hardwork done by a group of students at IIT Jammu : <strong>Chhotu , Vishwajeet , Kshitij , Mukesh</strong>."</p>
+        </div>
+        <hr>
+      </div>
+</footer>
+<!--<img src="https://www.lidac.com/images/2-individual_employee_login.jpg" border="3px" style="width:98.7vw; overflow:hidden; height:90vh; border: 5px white;">-->
+</body>
